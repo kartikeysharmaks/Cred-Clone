@@ -40,7 +40,7 @@ const MobileScroll = () => {
       <div className="scroll-full-screen-wrapper">
         {scrollData.map((screen, i) => (
           <div className="scroll-full-screen">
-            <ScreenText screen={screen} setCurrentImg={setCurrentImg} i={i} />
+            <ScreenText screen={screen} setCurrentImg={setCurrentImg} i={i} key={i}/>
           </div>
         ))}
       </div>
